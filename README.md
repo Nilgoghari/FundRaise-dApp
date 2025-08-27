@@ -28,12 +28,19 @@ Ownership can also be transferred safely for flexibility and future upgrades.
 🧑‍💻 Solidity Concepts Demonstrated
 
 📌 Interfaces (IfundRaise) → modularity & reusability
+
 📌 Events → logging key actions (Donation, Withdraw, ChangeOwner)
+
 📌 Modifiers (onlyOwner) → access control for sensitive functions
+
 📌 Mappings (balances) → track donations per user
+
 📌 Constructor → set initial contract owner
+
 📌 Payable functions (donate, withdraw, receive) → handle ETH securely
+
 📌 Ownership transfer → update contract owner safely
+
 📌 Low-level call (call{value: ...}("")) → reliable ETH transfer
 
 
@@ -42,8 +49,11 @@ Ownership can also be transferred safely for flexibility and future upgrades.
 📦 Project Structure
 
 FundRaise
- ┣ 📜 fundRaise.sol        # Main contract
+ ┣ 📜 fundRaise.sol        # Main
+ contract
+ 
  ┣ 📜 IfundRaise.sol       # Interface
+ 
  ┗ 📜 README.md            # Documentation
 
 
@@ -53,11 +63,15 @@ FundRaise
 
 ✅ Used interface (IfundRaise) for modularity & upgradability
 
+
 ✅ Emitted events for every key action → better dApp integration & monitoring
+
 
 ✅ Applied owner-only modifier to secure sensitive functions
 
+
 ✅ Prevented zero-value donations
+
 
 ✅ Ensured safe ETH transfers using .call{value: ...}("")
 
